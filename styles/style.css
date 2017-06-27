@@ -1,0 +1,379 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*end resets*/
+
+/*general styles*/
+
+h1, h2, p, a {
+	font-family: 'Raleway', sans-serif;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*end general styles*/
+
+/*hero image*/
+
+.hero-image-home {
+	/*background-image: url('../images/heroimagewhite.jpg');*/
+	/*background-size:cover;*/
+	background-size: 100% 100%;
+	position:relative;
+	/*height:100vh;*/
+	z-index: 50;
+	background-position: bottom right;
+}
+
+/*end hero image*/
+
+/*nav bar*/
+
+nav {
+	height: 46px;
+	font-size: 18px;
+	color: #2fc0be;
+}
+
+ul {
+	display: flex;
+	justify-content: flex-end;
+	list-style-type: none;
+	padding-top: 40px;
+	padding-right: 100px;
+}
+
+a {
+	text-decoration: none;
+	padding: 30px;
+	color: #2fc0be;
+	position: relative;
+}
+
+a:hover {
+	color: #0f9375;
+}
+
+/*end nav bar*/
+
+
+/*main content*/
+
+.titl {
+	margin-top: 30px;
+	margin-bottom: 100px;
+	margin-left: 5%;
+}
+
+.text p {
+	margin-left: 5%;
+	width: 50%;
+	line-height: 30px;
+	margin-bottom: 300px;
+	flex-grow: 2;
+	margin-right: auto;
+}
+
+/*end main content*/
+
+
+/*page 1*/
+
+.page1, .page2, .page3 {
+	min-height: 100vh;
+}
+
+.page1 {
+	background-image: url('../images/hero2.png');
+	background-repeat: no-repeat;
+	background-position: bottom;
+	border-top: 1px solid #0f9375;
+}
+
+.page2 {
+	background-image: url('../images/hero3.png');
+	background-repeat: no-repeat;
+	background-position: bottom;
+	border-top: 1px solid #ff9714;
+}
+
+.page3 {
+	background-image: url('../images/hero4.png');
+	background-repeat: no-repeat;
+	background-position: center 500px;
+	border-top: 1px solid #d92a5f;
+}
+
+.flex2 {
+	display: flex;
+	margin-right: 5%;
+}
+
+
+.flex1 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.card3, .card6, .card9 {
+	margin-right: 5%;
+}
+
+.card1, .card3, .card4, .card6, .card7, .card9{
+	width: 190px;
+	height: 350px;
+	background: #0f9375;
+	background: linear-gradient(to bottom, #0f9375 0%,#2fc0be 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f9375', endColorstr='#2fc0be',GradientType=0 );
+	border-radius: 3%;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column-reverse;
+    flex: 0 0 190px;
+}
+
+.card1:hover, .card3:hover, .card4:hover, .card6:hover, .card7:hover, .card9:hover {
+	box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+	flex: 0 0 240px;
+	/*width: 240px;*/
+	height: 400px;
+}
+
+.card2 {
+	background: linear-gradient(to bottom, #0f9375 0%,#2fc0be 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f9375', endColorstr='#2fc0be',GradientType=0 );
+}
+
+
+.card2, .card5, .card8{
+	width: 240px;
+	height: 400px;
+	background: #0f9375;
+	border-radius: 3%;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    flex: 0 0 240px;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.row2 {
+	background: linear-gradient(to bottom, #ffd203 0%,#ff9714 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd203', endColorstr='#ff9714',GradientType=0 );
+}
+
+.row3 {
+	background: linear-gradient(to bottom, #d92a5f 0%,#792065 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d92a5f', endColorstr='#792065',GradientType=0 );
+}
+
+.card2:hover, .card5:hover, .card8:hover {
+	box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+	height: 100px;
+	width: 100%;
+	background-color: white;
+	padding: 10px 16px;
+	line-height: normal;
+}
+
+.container h2 {
+	font-weight: bold;
+}
+
+.one {
+	color: #0f9375;
+}
+
+.two {
+	color: #ff9714;
+}
+
+.three {
+	color: #d92a5f;
+}
+
+
+/*end page 1*/
+
+footer {
+	min-height: 75px;
+	border-top: 1px solid #792065;
+	display: flex;
+	justify-content: center;
+	line-height: 75px;
+}
+footer p {
+	display: block;
+	margin-right: 20px;
+}
+
+footer a {
+	color: #2fc0be;
+	padding: 0;
+	/*line-height: 75px;*/
+}
+
+footer a:hover {
+	color: #0f9375;
+}
+
+.social {
+	margin-left: 50px;
+}
+
+.fa-instagram {
+	margin: 0 8px;
+}
+
+.fa-facebook:hover {
+	color: #0f9375;
+}
+
+.fa-instagram:hover {
+	color: #ff9714;
+}
+
+.fa-twitter:hover {
+	color: #d92a5f;
+}
+
+.social a {
+		color: black;
+}
+
+
+/*media queries*/
+
+@media screen and (max-width: 1290px) {
+
+	.flex1 {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.flex2 {
+		margin: 0 auto;
+	}
+
+	.text p {
+		margin-bottom: 100px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+	.titl {
+		text-align: center;
+		margin-left: 0;
+	}
+
+}
+
+@media screen and (max-width: 850px){
+
+	ul {
+		padding-top: 20px;
+		justify-content: space-around;
+		padding-right: 0;
+	}
+
+	.hero-image-home img {
+		padding: 20px;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	
+	.flex2 {
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 50px;
+	}
+
+	.card3, .card6, .card9 {
+		margin-right: 0;
+	}
+
+	.card2, .card5, .card8 {
+		margin: 50px 0;
+	}
+
+	footer {
+		flex-direction: column;
+		line-height: normal;
+		align-items: center;
+	}
+
+	footer p {
+		text-align: center;
+		margin-right: 0;
+	}
+
+	footer a {
+		margin-top: 5px;
+	}
+
+	.social {
+		margin:0 auto;
+	}
+
+
+
+}
